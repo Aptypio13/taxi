@@ -22,7 +22,7 @@ The app simulates a cab service where you can control the number of drivers, the
 * `DAO - Data access layer`
 * `Service - Application logic layer`
 * `Controllers - Presentation layer`
-* `DB - вatabase based on MySQL server`
+* `DB - based on MySQL server`
 
 
 ## Features:
