@@ -1,7 +1,8 @@
-# Taxi-Service Web-App
+# Taxi Web-App
 ### Project description:
 
 A simple web-application that supports authentication, registration and other CRUD operations. It is written for educational purposes.
+The app simulates a cab service where you can control the number of drivers, their licenses and cars.
 
 - ## Used technologies and libraries:
 - Java 11
@@ -17,10 +18,12 @@ A simple web-application that supports authentication, registration and other CR
 - Checkstyle plugin
 
 
-## Project structure (3-layer architecture):
+## Project structure (N-Tier Architecture):
 * `DAO - Data access layer`
 * `Service - Application logic layer`
 * `Controllers - Presentation layer`
+* ʼDB - вatabase based on MySQL serverʼ
+
 
 ## Features:
 - registration like a driver;
@@ -37,9 +40,21 @@ A simple web-application that supports authentication, registration and other CR
 ## Steps to run the program on your computer:
 - 1 Clone the repo: [https://github.com/Aptypio13/taxi-serves.git](https://github.com/Aptypio13/taxi-serves.git);
 - 2 Install MySQL;
-- 3 Configure Apache Tomcat version (**IMPORTANT**): 9.0.xx;
+- 3 Configure Apache Tomcat version (**IMPORTANT**) version: 9.0.xx;
 - 4 Copy and run SQL script [/src/main/resources/init_db.sql](/src/main/resources/init_db.sql) to creating a schema and tables for the project;
 - 5 Configure [/src/main/java/taxi/util/ConnectionUtil.java](/src/main/java/taxi/util/ConnectionUtil.java) with your URL, USERNAME, PASSWORD, JDBC_DRIVER;
 - 6 Done. Now just try to use it:
+## Example of parameters for ConnectionUtil.class
+``` java
+    private static final String URL = "jdbc:mysql://localhost:3306/taxi?useUnicode=true&serverTimezone=UTC";
+    private static final String USERNAME = "root";
+    private static final String PASSWORD = "123456";
+    private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
+```
 
-### For all questions - aptypio@gmail.com
+## I plan to add a:
+* Remote sql-server
+* CSS style
+* Desktop version
+
+### For all questions - aptypio668@gmail.com
