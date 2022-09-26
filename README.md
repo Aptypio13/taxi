@@ -22,8 +22,6 @@ The app simulates a cab service where you can control the number of drivers, the
 * `DAO - Data access layer`
 * `Service - Application logic layer`
 * `Controllers - Presentation layer`
-* `DB - based on MySQL server`
-
 
 ## Features:
 - registration like a driver;
@@ -41,7 +39,7 @@ The app simulates a cab service where you can control the number of drivers, the
 - 1 Clone the repo: [https://github.com/Aptypio13/taxi-serves.git](https://github.com/Aptypio13/taxi-serves.git);
 - 2 Install MySQL;
 - 3 Configure Apache Tomcat version (**IMPORTANT**) version: 9.0.xx;
-- 4 Copy and run SQL script [/src/main/resources/init_db.sql](/src/main/resources/init_db.sql) to creating a schema and tables for the project;
+- 4 Copy and run SQL script [/src/main/resources/init_db.sql](/src/main/resources/init_db.sql) to create a schema and tables for the project;
 - 5 Configure [/src/main/java/taxi/util/ConnectionUtil.java](/src/main/java/taxi/util/ConnectionUtil.java) with your URL, USERNAME, PASSWORD, JDBC_DRIVER;
 - 6 Done. Now just try to use it:
 ## Example of parameters for ConnectionUtil.class
@@ -51,10 +49,5 @@ The app simulates a cab service where you can control the number of drivers, the
     private static final String PASSWORD = "123456";
     private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 ```
-
-## I plan to add a:
-* Remote sql-server
-* CSS style
-* Desktop version
 
 ### For all questions - aptypio668@gmail.com
